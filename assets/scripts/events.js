@@ -39,6 +39,18 @@ form.addEventListener('submit', event => {
 	console.log(event);
 });
 
+const div = document.querySelector('div');
+
+div.addEventListener('click', event => {
+	console.log('CLICKED DIV');
+	console.log(event);
+}, true);
+
+button.addEventListener('click', event => {
+	console.log('CLICKED BUTTON');
+	console.log(event);
+});
+
 
 
 
