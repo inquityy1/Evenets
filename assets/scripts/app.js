@@ -179,6 +179,12 @@ class ProjectList {
 			if (this.projects.find(p => p.id === prjId)) {
 				return;
 			}
+			document
+				.getElementById(prjId)
+				.querySelector('button:last-of-type')
+				.click();
+				list.parentElement.classList.remove('droppable');
+				// event.preventDefault(); //not required
 		});
 	}
 
